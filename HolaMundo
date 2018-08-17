@@ -1,0 +1,19 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	cout<< "Hola Mundo"<< endl;
+	cout<< " Soy Carlos Camacho";
+	getch();
+}
+
+Pseudocodigo
+Proceso HolaMundo
+	Escribir "Hola soy Carlos"
+FinProceso
+
