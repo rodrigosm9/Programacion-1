@@ -1,0 +1,18 @@
+//C++//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float r,pi,area;
+	cout<< "radio: ";
+	cin>>r;
+	pi=3.141592;
+	area=pi*r*r;
+	cout<< "area: "<<area<<endl;
+	getch();
+}
