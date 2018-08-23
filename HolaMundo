@@ -1,4 +1,6 @@
 
+//C++//
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -12,7 +14,8 @@ void main()
 	getch();
 }
 
-Pseudocodigo
+//Pseudocodigo//
+
 Proceso HolaMundo
 	Escribir "Hola soy Carlos"
 FinProceso
