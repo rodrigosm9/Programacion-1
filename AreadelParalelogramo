@@ -1,4 +1,6 @@
+
 //C++//
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -17,3 +19,15 @@ void main()
 	cout<< "area: "<<area<<endl;
 	getch();
 }
+
+//Pseudocodigo//
+
+Algoritmo AreadelParalelogramo
+	Definir Area, base, altura como reales;
+	Escribir "Ingrese la base"
+	Leer base
+	Escribir "Ingrese la altura"
+	Leer altura
+	area= base*altura
+	Escribir "area: " area;
+FinAlgoritmo
