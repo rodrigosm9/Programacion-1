@@ -19,6 +19,7 @@ void main()
 }
 
 //Pseudocodigo//
+
 Algoritmo AreadelCuadrado
 	Definir Area, lado como reales;
 	Escribir "Ingrese el lado"
