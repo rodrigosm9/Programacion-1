@@ -1,4 +1,6 @@
+
 //C++//
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -18,4 +20,11 @@ void main()
 }
 
 //Pseudocodigo//
+Algoritmo AreadelCirculo
+	Definir radio, area Como Real
+	Escribir 'Ingrese el radio'
+	Leer radio
+	area <- 3.141592*radio*radio
+	Escribir 'area: ',area
+FinAlgoritmo
 
