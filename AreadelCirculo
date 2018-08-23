@@ -20,6 +20,7 @@ void main()
 }
 
 //Pseudocodigo//
+
 Algoritmo AreadelCirculo
 	Definir radio, area Como Real
 	Escribir 'Ingrese el radio'
