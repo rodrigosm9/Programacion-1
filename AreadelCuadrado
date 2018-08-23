@@ -16,4 +16,13 @@ void main()
 	getch();
 }
 
+//Pseudocodigo//
+Algoritmo AreadelCuadrado
+	Definir Area, lado como reales;
+	Escribir "Ingrese el lado"
+	Leer lado
+	area= lado*lado
+	Escribir "area: " area;
+FinAlgoritmo
+
 
