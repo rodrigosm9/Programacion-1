@@ -16,3 +16,6 @@ void main()
 	cout<< "area: "<<area<<endl;
 	getch();
 }
+
+//Pseudocodigo//
+
