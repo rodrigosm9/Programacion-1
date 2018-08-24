@@ -18,3 +18,16 @@ void main()
 	cout<<"El area es: "<<area<<endl;
 	getch();
 }
+
+//Pseudocodigo//
+
+Proceso AreayPerimetroCircunferencia
+	Escribir "Ingrese el radio: "
+	Leer r
+	p<-3.141592
+	perimetro<- 2*p*r
+	area<- p*r*r
+	Escribir "El perimetro es: ", perimetro
+	Escribir "El area es: ", area
+FinProceso
+
