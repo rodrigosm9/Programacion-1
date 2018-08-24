@@ -1,1 +1,20 @@
 
+//C++//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{
+	float area, perimetro, r, pi;
+	cout<< "Introduce el radio: ";
+	cin>> r;
+	pi=3.141592;
+	perimetro=2*pi*r;
+	area=pi*r*r;
+	cout<<"El perimetro es: "<<perimetro<<endl;
+	cout<<"El area es: "<<area<<endl;
+	getch();
+}
