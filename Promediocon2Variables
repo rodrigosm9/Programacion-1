@@ -1,0 +1,36 @@
+
+//C++//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{
+	
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+
+	float a, prom=0;
+	cin>>a;
+	prom=prom+a;
+	cin>>a;
+	prom=prom+a;
+	cin>>a;
+	prom=prom+a;
+	cin>>a;
+	prom=prom+a;
+	cin>>a;
+	prom=prom+a;
+	cout<< "El promedio es: "<<prom/5<<endl;
+	getch();
+}
+
+
+                               
