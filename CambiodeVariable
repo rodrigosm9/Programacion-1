@@ -1,0 +1,25 @@
+
+//C++//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{
+	float a,b,c;
+	cout<< "Escribir la variable a: ";
+	cin>> a;
+	cout<< "Escribir la variable b :";
+	cin>>b;
+	c=a;
+	a=b;
+	b=c;
+	cout<< "Ahora a vale :"<<a<<endl;
+	cout<< "Ahora b vale :"<<b<<endl;
+	getch();
+}
+
+
+                               
