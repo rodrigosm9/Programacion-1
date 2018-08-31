@@ -1,5 +1,4 @@
 
-
 // 3puntos=Circunferencia.cpp : Defines the entry point for the console application.
 //
 
@@ -12,7 +11,7 @@ using namespace std;
 
 void main()
 {
-	float D, E, F,y1, x2, y2, x3, y3, z1, z2, z3, h1, h2, h3, DG, DD, DE, DF, centro, radio, T1, T2, T3, x1;
+	float D, E, F, x1, y1, x2, y2, x3, y3, z1, z2, z3, X1, X2, X3, Y1, Y2, Y3, Z1, Z2, Z3, DG, DD, DE, DF, centro, radio, T1, T2, T3, h, k, suma;
 
 	cout<< "Ingrese sus 3 puntos para la circunferencia."<<endl;
 
@@ -38,43 +37,42 @@ void main()
 
 	//Formar las ecuaciones.
 
-	T1=-1pow(x1,2)+pow(y1,2))
+	T1= -1 * (pow(x1,2) + pow(y1,2));
+	X1=x1;
+	Y1=y1;
+	Z1=1;
 
+	T2= -1 * (pow(x2,1) + pow(y2,2));
+	X2=x2;
+	Y2=y2;
+	Z2=1;
 
-	
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
+	T3= -1 * (pow(x3,2) + pow(y3,2));
+	X3=x3;
+	Y3=y3;
+	Z3=1;
 	
 	//Hallar la determinante general.
 
-	DG=((x1*y2*z3)+(x2*y3*z1)+(x3*y1*z2)-(x2*y1*z3)-(x1*y3*z2)-(x3*y2*z1));
+	DG = (X1*Y2*Z3)+(X2*Y3*Z1)+(X3*Y1*Z2)-(X2*Y1*Z3)-(X1*Y3*Z2)-(X3*Y2*Z1);
+
+	cout<<"Determinante General: "<<DG<<endl;
 
 
-	//Hallar las dterminantes de D,E y F.
+	//Hallar las determinantes de D,E y F.
 
-	DD=((h1*y2*z3)+(h2*y3*z1)+(h3*y1*z2)-(h2*y1*z3)-(h1*y3*z2)-(h3*y2*z1));
+	DD = ((T1*Y2*Z3)+(T2*Y3*Z1)+(T3*Y1*Z2))-((T2*Y1*Z3)-(T1*Y3*Z2)-(T3*Y2*Z1));
 
-	DE=((x1*h2*z3)+(x2*h3*z1)+(x3*h1*z2)-(x2*h1*z3)-(x1*h3*z2)-(x3*h2*z1));
+	DE = ((X1*T2*Z3)+(X2*T3*Z1)+(X3*T1*Z2))-((X2*T1*Z3)-(X1*T3*Z2)-(X3*T2*Z1));
 
-	DF=((x1*y2*h3)+(x2*y3*h1)+(x3*y1*h2)-(x2*y1*h3)-(x1*y3*h2)-(x3*y2*h1));
+	DF = ((X1*Y2*T3)+(X2*Y3*T1)+(X3*Y1*T2))-((X2*Y1*T3)-(X1*Y3*T2)-(X3*Y2*T1));
+
+	
+	cout<<"Determinante D: "<<DD<<endl;
+
+	cout<<"Determinante E: "<<DE<<endl;
+
+	cout<<"Determinante F: "<<DF<<endl;
 
 
 	D=DD/DG;
@@ -83,38 +81,28 @@ void main()
 
 	F=DF/DG;
 
+	cout<<"D: "<<D<<endl;
+	
+	cout<<"E: "<<E<<endl;
+	
+	cout<<"F: "<<F<<endl;
 
 	//Obtener centro y radio.
 
-	centro=(-D/2,-E/2);
+	
+	h=-D/2;
+	k=-E/2;
 
+	suma = pow(D,2) + pow(E,2) - 4*F;
+	radio = sqrt(suma)/2;
 
-	radio =(sqrt(pow(D,2))+(pow(E,2))-4*F)/2;
-
-	cout<< "El centro de la circunferencia es: "<<centro<<endl;
 
 	cout<< "El radio de la circunferencia es: "<<radio<<endl;
+	cout<<"El centro de la circunferencia es:"<<endl;
+	cout<<"h: "<<h<<endl;
+	cout<<"k: "<<k<<endl;
+	getch();	
 
-	getch();
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	getch();
-
-
-
-	
 }
+
 
