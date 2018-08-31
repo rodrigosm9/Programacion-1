@@ -1,0 +1,120 @@
+
+
+// 3puntos=Circunferencia.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float D, E, F,y1, x2, y2, x3, y3, z1, z2, z3, h1, h2, h3, DG, DD, DE, DF, centro, radio, T1, T2, T3, x1;
+
+	cout<< "Ingrese sus 3 puntos para la circunferencia."<<endl;
+
+	cout<< "x1: ";
+	cin>> x1;
+
+	cout<< "y1: ";
+	cin>> y1;
+
+	cout<<  "x2: ";
+	cin>> x2;
+
+	cout<< "y2: ";
+	cin>> y2;
+
+	cout<< "x3: ";
+	cin>> x3;
+
+	cout<< "y3: ";
+	cin>> y3;
+
+	
+
+	//Formar las ecuaciones.
+
+	T1=-1pow(x1,2)+pow(y1,2))
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	//Hallar la determinante general.
+
+	DG=((x1*y2*z3)+(x2*y3*z1)+(x3*y1*z2)-(x2*y1*z3)-(x1*y3*z2)-(x3*y2*z1));
+
+
+	//Hallar las dterminantes de D,E y F.
+
+	DD=((h1*y2*z3)+(h2*y3*z1)+(h3*y1*z2)-(h2*y1*z3)-(h1*y3*z2)-(h3*y2*z1));
+
+	DE=((x1*h2*z3)+(x2*h3*z1)+(x3*h1*z2)-(x2*h1*z3)-(x1*h3*z2)-(x3*h2*z1));
+
+	DF=((x1*y2*h3)+(x2*y3*h1)+(x3*y1*h2)-(x2*y1*h3)-(x1*y3*h2)-(x3*y2*h1));
+
+
+	D=DD/DG;
+
+	E=DE/DG;
+
+	F=DF/DG;
+
+
+	//Obtener centro y radio.
+
+	centro=(-D/2,-E/2);
+
+
+	radio =(sqrt(pow(D,2))+(pow(E,2))-4*F)/2;
+
+	cout<< "El centro de la circunferencia es: "<<centro<<endl;
+
+	cout<< "El radio de la circunferencia es: "<<radio<<endl;
+
+	getch();
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	getch();
+
+
+
+	
+}
+
