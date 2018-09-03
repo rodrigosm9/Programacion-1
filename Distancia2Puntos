@@ -1,0 +1,32 @@
+
+//C++//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main () {
+
+	float x1, x2, y1, y2, distancia;
+
+	cout<<"Ingrese el valor de x1: ";
+	cin>>x1;
+	cout<<"Ingrese el valor de y1: ";
+	cin>>y1;
+	cout<<"Ingrese el valor de x2:";
+	cin>>x2;
+	cout<<"Ingrese el valor de y2: ";
+	cin>>y2;
+
+	distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+
+	cout<<"La distancia entre los puntos es: "<<distancia<<endl;
+
+	getch();
+}
+
+//Pseudocodigo//
+
