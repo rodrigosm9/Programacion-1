@@ -1,0 +1,27 @@
+// Salario bruto.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main (){
+	float sm, salariobruto, salarioneto;
+	char s;
+	sm=2060;
+	do{
+		cout<<"Ingrese el salario bruto: "<<endl;
+		cin>> salariobruto;
+		if (salariobruto>=sm*4)
+			salarioneto= salariobruto - salariobruto * 0.251;
+		else
+			salarioneto= salariobruto - salariobruto * 0.121;
+		cout<<"el salario neto es: "<<salarioneto<<endl;
+		cout<<"Desea continuar?"<<endl;
+		cin>>s;
+
+	}while(s=='s');
+
+		getch();
+}
